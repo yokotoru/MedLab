@@ -1,0 +1,62 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>logo.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\logo.png" />
+    <None Remove="Pages\add.png" />
+    <None Remove="Pages\addImage.png" />
+    <None Remove="Pages\closedEye.png" />
+    <None Remove="Pages\exit.png" />
+    <None Remove="Pages\filter.png" />
+    <None Remove="Pages\log-out.png" />
+    <None Remove="Pages\loupe.png" />
+    <None Remove="Pages\OpenEye.png" />
+    <None Remove="Pages\printer.png" />
+    <None Remove="Pages\results.png" />
+    <None Remove="Pages\services.png" />
+    <None Remove="Pages\sort.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="logo.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\closedEye.png" />
+    <Resource Include="Images\log-out.png" />
+    <Resource Include="Images\openEye.png" />
+    <Resource Include="Images\services.png" />
+    <Resource Include="Images\results.png" />
+    <Resource Include="Images\add.png" />
+    <Resource Include="Images\sort.png" />
+    <Resource Include="Images\filter.png" />
+    <Resource Include="Images\exit.png" />
+    <Resource Include="Images\loupe.png" />
+    <Resource Include="Images\printer.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="Images\logo.png" />
+  </ItemGroup>
+
+</Project>
